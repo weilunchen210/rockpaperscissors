@@ -5,24 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="scoreboard">
+        <p id="UserScore">
+            0
+        </p>
         <p>
-            0-0
+            -
+        </p>
+        <p id="CPUScore">
+            0
         </p>
     </div>
-</div>
+    <div class="outcome">
+        <p id="outcome">
+
+        </p>
+    </div>
     <div class="display">
-        <div class="me"></div>
-        <div class="opponent"></div>
+        <div id="me">
+            <p>
+                My Choice
+            </p>
+            <img id="meImage" src="images/blank.png">
+        </div>
+        <div id="opponent">
+            <p>
+                CPU Choice
+            </p>
+            <img id="cpuImage" src="images/blank.png">
+        </div>
     </div>
     <div class="buttons">
-        <div class ="rock"><img src="images/rock.png"></div>
-        <div class ="paper"><img src="images/paper.png"></div>
-        <div class ="scissors"><img src="images/scissors.png"></div>
+        <div id ="rock"><img onclick="rockChoice()" src="images/rock.png"></div>
+        <div id ="paper"><img onclick="paperChoice()" src="images/paper.png"></div>
+        <div id ="scissors"><img onclick="scissorsChoice()" src="images/scissors.png"></div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
